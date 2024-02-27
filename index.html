@@ -13,6 +13,7 @@
       src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
       defer
     ></script>
+    <link href="https://db.onlinewebfonts.com/c/a6f18c63dd4a63988c2f52203da54485?family=Microscan+A" rel="stylesheet">
     <style>
       @media print {
         /* See https://caniuse.com/css-paged-media */
@@ -21,6 +22,10 @@
           margin: 0mm;
           size: A4;
         }
+      }
+      div.container li {
+        font-family: "Microscan A";
+        letter-spacing: -0.4ex;
       }
     </style>
   </head>
@@ -214,11 +219,11 @@
             <div
               class="flex-grow"
               :class="{
-                'text-[3.9mm]': label.text.length <= 6,
-                'text-[3.2mm]': label.text.length == 7,
-                'text-[2.7mm]': label.text.length == 8,
-                'text-[2.4mm]': label.text.length == 9,
-                'text-[2.1mm]': label.text.length >= 10,
+                'text-[4.4mm]': label.text.length <= 6,
+                'text-[3.9mm]': label.text.length == 7,
+                'text-[3.4mm]': label.text.length == 8,
+                'text-[3.1mm]': label.text.length == 9,
+                'text-[2.4mm]': label.text.length >= 10,
               }"
               x-text="label.text"
             ></div>
